@@ -7,8 +7,10 @@
 
     <link rel="stylesheet" href="./style.css">
     <script src="./app.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 <body>
+    <div id="all">
     <div class="head">
         <img src="./assets/face.jpg" alt="picture">
         <div class="name">ABHINAV A V</div>
@@ -16,28 +18,19 @@
     </div>
     <div class="scontainer">
         <div class="social">
-            <a href="mailto:avabhinav13@gmail.com"> <img src="./assets/mail.png" alt=""></a>
+            <a onclick="startCaptcha()"> <img src="./assets/mail.png" alt=""></a>
             <a href="https://twitter.com/theotherav" target="_blank"><img src="./assets/twitter.png" alt=""></a>
             <a href="https://github.com/eesypeesy" target="_blank"><img src="./assets/github.png" alt=""></a>
         </div>
+        <button class="g-recaptcha" 
+        data-sitekey="6Lc-MKsZAAAAAD699ChsPvOlFvv4lZ00_nXHgf2N" 
+        data-callback='onSubmit' 
+        data-action='submit'>Submit</button>
     </div>
     <div class="about">hi there! I'm Abhinav A V and welcome to my portfolio.Here, you can see all the information about myself, things that I'm good at, and what I've achieved with those things. 
         <br>I'm 19 years old and currently I'm doing Btech in Computer Science and Engineering at the beautiful Government Engineering College Idukki (batch of '18-'22).
     </div>
-    <div class="skills">
-        <div class="heading">things that im good at</div>
-        <div class="line"></div>
-        <div class="details">
-        <div class="front">HTML5 & CSS3</div>
-        <div class="front">JavaScript</div>
-        <div class="back">Database and Storage(Firebase)</div>
-        <div class="gd">Adobe Photoshop</div>
-        <div class="gd">Adobe Illustrator</div>
-        <div class="other">C Language</div>
-        <div class="other">Python</div>
-        <div class="other">Java</div>
-        
-        </div>
+    </div>
     </div>
 </body>
 </html>

@@ -45,7 +45,7 @@ body{
 }
 
 
-.scontainer{
+#scontainer{
     position: relative;
     text-align: center;
     margin-top: 10px;
